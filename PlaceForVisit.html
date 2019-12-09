@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Places For Visit | Internet Technologies CS</title>
+    <link href="Assets/Image/flag.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/PlacesStyle.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <style>
+        .contentHolder {
+            min-height: 460px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="navbarHeader"></div>
+        <br>
+
+        <div class="container contentHolder">
+            <h3 class="h3">Places to Visit </h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="news-slider" class="owl-carousel">
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="Assets/Image/jaflong.jpeg" alt="">
+                                    <div class="post-date">
+                                        <span class="date">10</span>
+                                        <span class="month">Nov</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="post-review">
+                                <h3 class="post-title"><a href="#">Syleht,Jaflong</a></h3>
+                                <ul class="post-bar">
+                                    <li><i class="fa fa-user"></i><a href="#">Sakib</a></li>
+                                    <li><i class="fa fa-comment"></i><a href="#">5</a></li>
+                                </ul>
+                                <p class="post-description">Jaflong stands in Gawainghat upazila 62 kilometres to the north-east from Sylhet town.Jaflong is known as the daughter of nature to the whole of the country.</p></div>
+                        </div>
+
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="Assets/Image/st martin.jpg" alt="">
+                                    <div class="post-date">
+                                        <span class="date">13</span>
+                                        <span class="month">jan</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="post-review">
+                                <h3 class="post-title"><a href="#">St. Martin's Island </a></h3>
+                                <ul class="post-bar">
+                                    <li><i class="fa fa-user"></i><a href="#">Mohammad</a></li>
+                                    <li><i class="fa fa-comment"></i><a href="#">7</a></li>
+                                </ul>
+                                <p class="post-description">St. Martin's Island is a small island in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip.</div>
+                        </div>
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="Assets/Image/sajek.png" alt="">
+                                    <div class="post-date">
+                                        <span class="date">13</span>
+                                        <span class="month">jan</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="post-review">
+                                <h3 class="post-title"><a href="#">Sajek Valley</a></h3>
+                                <ul class="post-bar">
+                                    <li><i class="fa fa-user"></i><a href="#">Md Ujjal</a></li>
+                                    <li><i class="fa fa-comment"></i><a href="#">7</a></li>
+                                </ul>
+                                <p class="post-description">Sajek valley is known for its natural environment and surrounded by mountains, dense forest, and grasslands hill tracks. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div id="footerHere"></div>
+    </div>
+    <!-- scripts are here -->
+    <script>
+        $(window).on('load', function() {
+            $("#navbarHeader").load("navheader.html");
+            $("#footerHere").load("footer.html");
+        });
+        $(document).ready(function() {
+            $("#news-slider").owlCarousel({
+                items: 2,
+                itemsDesktop: [1199, 2],
+                itemsMobile: [600, 1],
+                pagination: true,
+                autoPlay: true
+            });
+        });
+    </script>
+</body>
+
+</html>

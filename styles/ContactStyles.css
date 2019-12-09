@@ -1,0 +1,61 @@
+font-family: 'Roboto',
+sans-serif;
+body {
+    background: #D9B280;
+    font-family: "Roboto", sans-serif;
+}
+
+.Content.container {
+    background: #FFFFFF;
+    margin: 5% auto;
+    min-height: 460px;
+}
+
+.MessageContainer {
+    width: 100%;
+}
+
+.Content.container .map {
+    /* width: 45%; */
+    float: left;
+}
+
+.Content.container .contact-form {
+    /* width: 53%; */
+    /* margin-left: 2%; */
+    display: contents;
+    float: left;
+}
+
+.Content.container .contact-form .title {
+    font-size: 2.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #242424;
+    margin: 5% 8%;
+}
+
+.Content.container .contact-form .subtitle {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 4% 5% 8%;
+}
+
+.Content.container .contact-form input::placeholder,
+.Content.container .contact-form textarea::placeholder {
+    color: #242424;
+}
+
+.Content.container .contact-form .btn-send {
+    background: #A383C9;
+    width: 180px;
+    height: 60px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin: 2% 8%;
+    border: none;
+}
+
+.sendBtnCont {
+    padding: 0;
+}

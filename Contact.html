@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact | Internet Technologies CS</title>
+    <link href="Assets/Image/flag.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/ContactStyles.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="navbarHeader"></div>
+        <br>
+
+        <div class="Content container">
+            <div class="map col-md-6 col-sm-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14856.07629490528!2d91.96143112698685!3d21.42849527252947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc868716d4925%3A0xcd3ada60adda3a3b!2sCox&#39;s%20Bazar%20Beach!5e0!3m2!1sen!2scz!4v1574809832956!5m2!1sen!2scz"
+                    frameborder="0" style="border:0; width:100%; min-height: 400px;" allowfullscreen=""></iframe>
+            </div>
+            <div class="contact-form  col-md-6 col-sm-12">
+                <h1 class="title">Contact Us</h1>
+                <h2 class="subtitle">We are here assist you.</h2>
+                <form role="form" id="contact-form" class="contact-form">
+                    <div class="row">
+                        <div class="MessageContainer">
+                            <div class="form-group">
+                                <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="MessageContainer">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail Address">
+                            </div>
+                        </div>
+                        <div class="MessageContainer">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-2 sendBtnCont">
+                            <button type="submit" class="btn main-btn pull-right btn-secondary">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        <div id="footerHere"></div>
+    </div>
+    <!-- scripts are here -->
+    <script>
+        $(window).on('load', function() {
+            $("#navbarHeader").load("navheader.html");
+            $("#footerHere").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>

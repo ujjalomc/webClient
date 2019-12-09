@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>News | Internet Technologies CS</title>
+    <link href="Assets/Image/flag.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/PlacesStyle.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <style>
+        .contentHolder {
+            min-height: 460px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="navbarHeader"></div>
+        <br>
+
+        <div class="container contentHolder">
+            <h3 class="h3">Latest News</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="news-slider" class="owl-carousel">
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="Assets/Image/fantasy_kingdom_2.jpg" alt="">
+                                    <div class="post-date">
+                                        <span class="date">12</span>
+                                        <span class="month">Nov</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="post-review">
+                                <h3 class="post-title"><a href="#">Fantasy Kingdom</a></h3>
+                                <ul class="post-bar">
+                                    <li><i class="fa fa-user"></i><a href="#">Mahmud</a></li>
+                                    <li><i class="fa fa-comment"></i><a href="#">5</a></li>
+                                </ul>
+                                <p class="post-description">The Fantasy Kingdom Theme Park, commonly known as Fantasy Kingdom, is an entertainment complex in Ashulia, Savar, Bangladesh. Opened on 19 February 2002, the theme park is owned and operated by Concord Entertainment Co. Ltd, a sister concern of Concord Group.Regular Tickets: Adult: Entry+ 3 Rides = Tk. 500; Kids (below 4'): Entry = Tk. 300; Adult: Entry + All Rides (8 Rides)(Package Ashu) = Tk. 850.Fantasy Kingdom Complex is built in Jamgora at Ashulia which is nearby Dhaka city. The property includes the cities of Ashulia and Savar which are governed by the Dhaka District. There are currently many routes available to reach Fantasy Kingdom </p>
+                            </div>
+                        </div>
+
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="Assets/Image/nobo theater.jpg" alt="">
+                                    <div class="post-date">
+                                        <span class="date">13</span>
+                                        <span class="month">jan</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="post-review">
+                                <h3 class="post-title"><a href="#">Bangabandhu Sheikh Mujibur Rahman Novo Theatre</a></h3>
+                                <ul class="post-bar">
+                                    <li><i class="fa fa-user"></i><a href="#">Tanjir</a></li>
+                                    <li><i class="fa fa-comment"></i><a href="#">7</a></li>
+                                </ul>
+                                <p class="post-description">The Bangabandhu Sheikh Mujibur Rahman Novo Theatre opened to public on 25 September 2004.[3] It was previously named Bhashani Novo Theatre. It was made autonomous by Bangabandhu Sheikh Mujibur Rahman Novo Theatre Bill 2010.[4] The space center was commissioned by the Ministry of Science and Communication Technology of the Government of Bangladesh.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="post-slide">
+                            <div class="post-img">
+                                <a href="#">
+                                    <img src="Assets/Image/paris-u.jpg" alt="">
+                                    <div class="post-date">
+                                        <span class="date">13</span>
+                                        <span class="month">jan</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="post-review">
+                                <h3 class="post-title"><a href="#">Lalbagh Fort</a></h3>
+                                <ul class="post-bar">
+                                    <li><i class="fa fa-user"></i><a href="#">Chowdhury</a></li>
+                                    <li><i class="fa fa-comment"></i><a href="#">7</a></li>
+                                </ul>
+                                <p class="post-description">Lalbagh Fort is an incomplete 17th century Mughal fort complex that stands before the Buriganga River in the southwestern part of Dhaka, Bangladesh. The construction was started in 1678 AD by Mughal Subahdar Muhammad Azam Shah who was son of Emperor Aurangzeb and later emperor himself..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div id="footerHere"></div>
+    </div>
+    <!-- scripts are here -->
+    <script>
+        $(window).on('load', function() {
+            $("#navbarHeader").load("navheader.html");
+            $("#footerHere").load("footer.html");
+        });
+        $(document).ready(function() {
+            $("#news-slider").owlCarousel({
+                items: 2,
+                itemsDesktop: [1199, 2],
+                itemsMobile: [600, 1],
+                pagination: true,
+                autoPlay: true
+            });
+        });
+    </script>
+</body>
+
+</html>
